@@ -28,9 +28,6 @@ public class AcceptAlert {
 
 		driver.findElement(By.name("proceed")).click();
 		
-		/*Alert alert = driver.switchTo().alert();
-		System.out.println(alert.getText());
-		alert.accept();*/
 		
 		WebDriverWait wait = new WebDriverWait(driver,10);
 		Alert alert = wait.until(ExpectedConditions.alertIsPresent());
